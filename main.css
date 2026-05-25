@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+.container-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.4rem;
+}
+
+.container-header a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color: black;
+}
+
+.menu a {
+  color: #140707;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #140707;
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+
+.book-an-appointment-button a {
+  color: #f3f3f3;
+  background-color: #140707;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.see-our-bundles-button a {
+  color: black;
+  border-color: #140707;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid #140707;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  margin: 50px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.title-1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  gap: 15px;
+  padding: 40px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  gap: 15px;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 10px;
+}
