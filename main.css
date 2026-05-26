@@ -25,7 +25,7 @@ body {
 
 .menu a {
   color: #140707;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   transition: background-color 0.3s;
 }
@@ -98,6 +98,7 @@ body {
 }
 
 .title-1 {
+  margin-top: -5%;
   font-size: 50px;
   font-weight: bolder;
   text-align: left;
@@ -115,6 +116,7 @@ body {
   gap: 15px;
   margin-top: 10px;
   margin-left: -1%;
+  margin-top: -1%;
 }
 
 .btn-login {
@@ -133,12 +135,13 @@ body {
 }
 
 .hero-img {
-  margin-top: -10%;
-  width: 400px;
+  margin-top: -9%;
+  width: 500px;
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
   margin-right: 5%;
+  border: 3px solid #140707;
 }
 
 .hero-img2 {
@@ -147,13 +150,14 @@ body {
   object-fit: cover;
   border-radius: 8px;
   margin-left: 5%;
+  border: 3px solid #140707;
 }
 
 .descriptions {
   font-size: 1.1rem;
   width: 100%;
   max-width: 550px;
-  margin-top: -10%;
+  margin-top: -9%;
   margin-left: auto;
   margin-right: 5%;
   text-align: right;
@@ -163,4 +167,11 @@ body {
   font-size: 50px;
   font-weight: bolder;
   text-align: right;
+}
+
+.bundles-title {
+  font-size: 45px;
+  font-weight: bolder;
+  margin-top: 20px;
+  text-align: center;
 }
