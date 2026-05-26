@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: 1px;
   margin-left: 15px;
   box-sizing: border-box;
 }
@@ -8,6 +8,7 @@
 body {
   background-color: rgb(255, 255, 255);
 }
+
 .container-header {
   display: flex;
   justify-content: space-around;
@@ -45,6 +46,7 @@ body {
   border-radius: 8px;
   font-weight: bold;
 }
+
 .see-our-bundles-button a {
   margin: 20px;
   display: flex;
@@ -80,28 +82,23 @@ body {
 .title-1 {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  align-self: flex-start;
   gap: 15px;
-  padding: 40px;
   font-size: 50px;
   font-weight: bolder;
+  text-align: right;
 }
 
 .subtitle {
   display: flex;
   flex-direction: row;
+  align-self: flex-start;
   margin-top: 1px;
   gap: 15px;
   padding: 1px;
   font-size: 20px;
   font-weight: 400;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 10px;
+  text-align: left;
 }
 
 .btn-login {
@@ -118,15 +115,15 @@ body {
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
+  width: 100%;
+  gap: 30px;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-self: flex-end;
   gap: 15px;
   margin-top: 10px;
 }
@@ -134,4 +131,18 @@ body {
 .subtitle p {
   font-size: 1.1rem;
   margin-bottom: 5px;
+}
+
+.desc-title {
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.descriptions {
+  font-size: 1.1rem;
+  align-self: flex-end;
+  max-width: 550px;
+  margin-top: 50px;
+  text-align: right;
 }
