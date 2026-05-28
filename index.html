@@ -5,73 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBarber</title>
     <link href="./dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="main.css" />
     <script src="main.js" defer></script>
   </head>
-  <body>
-    <div id="header">
-      <div class="container-header">
-        <div class="logo">
+  <body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
+    <div id="header" class="w-full">
+      <div
+        class="relative flex justify-center items-center p-[1.4rem] max-w-[1375px] mx-auto w-full"
+      >
+        <div
+          class="absolute left-[1.4rem] uppercase text-black font-bold cursor-pointer text-[25px] max-w-[500px]"
+        >
           <h1>WEBarber</h1>
         </div>
-        <div class="menu">
-          <a href="#home">Home</a>
-          <a href="#professionals">Professionals</a>
-          <a href="#contacts">Contacts</a>
-          <a href="#about-us">About Us</a>
-          <a href="#login" class="btn-login">Login</a>
+        <div class="flex items-center gap-16 translate-x-50">
+          <a
+            href="#home"
+            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+            >Home</a
+          >
+          <a
+            href="#professionals"
+            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+            >Professionals</a
+          >
+          <a
+            href="#contacts"
+            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+            >Contacts</a
+          >
+          <a
+            href="#about-us"
+            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+            >About Us</a
+          >
+          <a
+            href="#login"
+            class="bg-black font-bold border-2 inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer hover:border-2"
+            >Login</a
+          >
         </div>
       </div>
     </div>
-    <div id="home">
-      <div class="container-hero">
-        <div class="hero-left-content">
-          <div class="title-1">
-            <h1>The haircut you needed!</h1>
+    <div
+      id="home"
+      class="max-w-[1750px] mx-auto p-[60px_20px] flex flex-col items-center justify-center w-full gap-16 translate-x-7"
+    >
+      <div
+        class="flex flex-row flex-wrap justify-center items-center gap-12 w-full"
+      >
+        <div class="flex flex-col items-start max-w-[500px]">
+          <h1 class="text-[50px] font-black text-left text-6xl leading-tight">
+            O corte <br />
+            mais preciso <br />
+            que você precisa!
+          </h1>
+          <p class="text-[1.1rem] text-left mt-6">
+            Agende um horário com um de nossos profissionais <br />
+            para alavancar seu visual com nossos pacotes.
+          </p>
+          <div class="flex flex-row gap-4 mt-5 -translate-x-4">
+            <a
+              href="#appointment"
+              class="bg-black font-bold border-2 inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer hover:border-2"
+              >Agendar um horário</a
+            >
+            <a
+              href="#bundles"
+              class="bg-white font-bold inline-flex items-center justify-center text-black px-3 py-2 rounded-lg transition-colors cursor-pointer border-2 border-current"
+              >Ver nossos pacotes</a
+            >
           </div>
-          <div class="subtitle">
-            <p>
-              Schedule a time with one of our professionals to improve your
-              visuals! <br />
-              It is simple, fast and efficient.
-            </p>
-          </div>
-          <div class="buttons">
-            <div class="book-an-appointment-button">
-              <a href="#appointment" class="btn">Book an Appointment</a>
-            </div>
-            <div class="see-our-bundles-button">
-              <a href="#bundles" class="btn">See bundles</a>
-            </div>
-          </div>
-          <img
-            src="Gemini_Generated_Image_ieyk0uieyk0uieyk.png"
-            alt="Cabelo"
-            class="hero-img2"
-          />
         </div>
+
+        <img
+          src="Gemini_Generated_Image_ieyk0uieyk0uieyk.png"
+          alt="Cabelo"
+          class="w-60 h-71 object-cover border-[2px] border-[#140707] rounded-[20px]"
+        />
+      </div>
+
+      <div class="w-full flex justify-center">
         <img
           src="Gemini_Generated_Image_8ljl2g8ljl2g8ljl.png"
           alt="Barbearia"
-          class="hero-img"
+          class="w-[250px] h-[290px] object-cover rounded-[20px] border-[2px] border-[#140707] translate-x-100"
         />
+      </div>
 
-        <div class="descriptions">
-          <div class="desc-title">
-            <h2>Who we are?</h2>
-          </div>
-          <p>
-            Established in 2010, WEBarber is a successful barbershop <br />
-            that take care of more than five thousand clients in the region.
-            <br />
-            We won several awards, including "The best barbershop of the
-            country" in 2015.
-          </p>
+      <div
+        class="text-[1.1rem] max-w-[700px] text-start w-full -translate-70 -translate-x-40"
+      >
+        <div class="text-[50px] font-bold text-center mb-4">
+          <h2>Quem somos nós?</h2>
+        </div>
+        <p> <div class = "translate-x-35">
+Fundada em 2010, a WEBarber é uma barbearia extremamente respeitada
+          <br />
+          e várias vezes premiada pelo BarberAwards, com destaque pra 2015
+          <br />
+          onde conseguimos o prêmio mais importante do país, o BarberKings.
+        </p>
         </div>
       </div>
     </div>
-    <div class="bundles-title">
-      <a href="#bundlestitle">Our Bundles</a>
+
+    <div class="text-[45px] font-bold text-center mt-12 mb-20 w-full">
+      <a href="#bundlestitle" class="no-underline text-black">Our Bundles</a>
     </div>
   </body>
 </html>
