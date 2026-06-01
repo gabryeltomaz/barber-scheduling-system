@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBarber</title>
@@ -10,99 +10,112 @@
         *{
             font-family: "Inter", sans-serif !important;
         }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float-1 {
+            animation: float 4s ease-in-out infinite;
+        }
+        .animate-float-2 {
+            animation: float 4s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
     </style>
-  </head>
-  <body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
+</head>
+<body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
     <div id="header" class="w-full">
-      <div
+    <div
         class="relative flex justify-center items-center p-[1.4rem] max-w-[1375px] mx-auto w-full"
-      >
+    >
         <div
-          class="absolute left-[1.4rem] uppercase text-black font-bold cursor-pointer text-[25px] max-w-[500px]"
+        class="absolute left-[1.4rem] uppercase text-black font-bold cursor-pointer text-[25px] max-w-[500px]"
         >
-          <h1>WEBarber</h1>
+        <h1>WEBarber</h1>
         </div>
         <div class="flex items-center gap-16 translate-x-50">
-          <a
+        <a
             href="#home"
             class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Home</a
-          >
-          <a
+            >Início</a
+        >
+        <a
             href="#professionals"
             class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Professionals</a
-          >
-          <a
+            >Profissionais</a
+        >
+        <a
             href="#contacts"
             class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Contacts</a
-          >
-          <a
+            >Contatos</a
+        >
+        <a
             href="#about-us"
             class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >About Us</a
-          >
-          <a
+            >Sobre nós</a
+        >
+        <a
             href="#login"
-            class="bg-black font-bold border-2 inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer hover:border-2"
+            class="bg-black font-bold border-2 border-[#0084ff] inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer hover:border-2 shadow-md"
             >Login</a
-          >
+        >
         </div>
-      </div>
+    </div>
     </div>
     <div
-      id="home"
-      class="max-w-[1750px] mx-auto p-[60px_20px] flex flex-col items-center justify-center w-full gap-16 translate-x-7"
+    id="home"
+    class="max-w-[1750px] mx-auto p-[60px_20px] flex flex-col items-center justify-center w-full gap-16 translate-x-7"
     >
-      <div
+    <div
         class="flex flex-row flex-wrap justify-center items-center gap-12 w-full"
-      >
+    >
         <div class="flex flex-col items-start max-w-[500px]">
-          <h1 class="text-[45px] font-black text-left text-6xl leading-tight">
+        <h1 class="text-[45px] font-black text-left text-6xl leading-tight">
             O corte <br>
             mais preciso <br>
             que você precisa.
-          </h1>
-          <p class="text-[20px] text-left mt-6">
+        </h1>
+        <p class="text-[20px] text-left mt-6">
             Agende seu horário com um de nossos professionals
             para alavancar seu visual com um de nossos pacotes.
-          </p>
-          <div class="flex flex-row gap-4 mt-5 -translate-x-4">
+        </p>
+        <div class="flex flex-row gap-4 mt-5 -translate-x-4">
             <a
-              href="#appointment"
-              class="bg-black font-bold border-2 inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer hover:border-2"
-              >Agendar um horário</a
+            href="#appointment"
+            class="bg-black font-bold inline-flex items-center justify-center text-white px-3 py-2 transition-colors cursor-pointer shadow-md"
+            >Agendar um horário</a
             >
             <a
-              href="#bundles"
-              class="bg-white font-bold inline-flex items-center justify-center text-black px-3 py-2 rounded-lg transition-colors cursor-pointer border-2 border-current"
-              >Ver nossos pacotes</a
+            href="#bundles"
+            class="bg-white font-bold inline-flex items-center justify-center text-black px-3 py-2 transition-colors cursor-pointer border border-gray-400 shadow-md"
+            >Ver nossos pacotes</a
             >
-          </div>
+        </div>
         </div>
 
-        <img
-          src="Gemini_Generated_Image_ieyk0uieyk0uieyk.png"
-          alt="Cabelo"
-          class="w-60 h-71 object-cover border-[2px] border-[#140707] rounded-[20px] -translate-x-2"
-        />
-      </div>
+        <div class="animate-float-1">
+            <img
+            src="cabelo.jpg"
+            alt="Cabelo"
+            class="w-60 h-71 object-cover rounded-[20px] -translate-x-2 shadow-2xl"
+            />
+        </div>
+    </div>
 
-      <div class="w-full flex justify-center">
+    <div class="w-full flex justify-center animate-float-2">
         <img
-          src="Gemini_Generated_Image_8ljl2g8ljl2g8ljl.png"
-          alt="Barbearia"
-          class="w-[250px] h-[290px] object-cover rounded-[20px] border-[2px] border-[#140707]"
-          style="transform: translate(330px, -60px);"
+        src="barbearia.jpeg"
+        alt="Barbearia"
+        class="w-[250px] h-[290px] object-cover rounded-[20px] shadow-2xl"
+        style="transform: translate(330px, -60px);"
         />
-      </div>
+    </div>
 
-      <div
+    <div
         class="text-[1.1rem] max-w-[700px] text-start w-full -translate-80 -translate-x-45" style="transform: translate(5px, -40px)"
-      >
+    >
         <div class="text-[45px] font-extrabold text-center mb-4 font-black" style="transform: translate(5px, 0px)">
-          <h2>Quem somos nós?</h2>
+        <h2>Quem somos nós?</h2>
         </div>
         <p> <div class = "text-[20px]" style="transform: translate(134px, -7px);">
         Somos uma barbearia encontrada no bairro Martins <br>
@@ -110,67 +123,79 @@
         clássicos.
         </p>
         </div>
-      </div>
+    </div>
     </div>
     
     <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full" style="transform: translate(-30px, -360px);">
-      <a href="#bundlestitle" class="no-underline text-black">Nossos pacotes</a>
+    <a href="#bundlestitle" class="no-underline text-black">Nossos pacotes</a>
     </div>
 
-    <div class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black" style="transform: translate(530px, -360px);">
-      
-      <div class="absolute inset-y-0 left-1/2 w-px bg-gray-300 pointer-events-none z-10"></div>
-      <div class="absolute inset-x-0 top-1/2 h-px bg-gray-300 pointer-events-none z-10"></div>
+    <div class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black" style="transform: translate(510px, -360px);">
+    
+    <div class="absolute inset-y-0 left-1/2 w-px bg-gray-300 pointer-events-none z-10"></div>
+    <div class="absolute inset-x-0 top-1/2 h-px bg-gray-300 pointer-events-none z-10"></div>
 
-      <div class="p-8 bg-white flex gap-4 items-start">
-        <span class="text-2xl select-none">✂️</span>
+    <div class="p-8 bg-white flex gap-4 items-start">
+        <img src="homem-cabelo.svg" alt="Ícone Cabelo" class="w-16 h-16 object-contain" />
         <div>
-          <h3 class="font-bold text-xl">Cabelo</h3>
-          <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado na medida, de acordo com o formato do seu rosto.</p>
-          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+        <h3 class="font-bold text-xl">Cabelo</h3>
+        <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado na medida, de acordo com o formato do seu rosto.</p>
+        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
             <span>R$ 60</span>
-            <span class="font-bold text-black">🕒 30 min</span>
-          </div>
+            <span class="font-bold text-black flex items-center gap-1">
+                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                30 min
+            </span>
         </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="p-8 bg-white flex gap-4 items-start">
-        <span class="text-2xl select-none">💈</span>
+    <div class="p-8 bg-white flex gap-4 items-start">
+        <img src="corte-sobrancelha.svg" alt="ícone corte-sobrancelha" class="w-16 h-16 object-contain" />
         <div>
-          <h3 class="font-bold text-xl">Corte + Sobrancelha</h3>
-          <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado e preciso, combinado com um design de sobrancelhas.</p>
-          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+        <h3 class="font-bold text-xl">Corte + Sobrancelha</h3>
+        <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado, combinado com um design de sobrancelhas.</p>
+        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
             <span>R$ 110</span>
-            <span class="font-bold text-black">🕒 60 min</span>
-          </div>
+            <span class="font-bold text-black flex items-center gap-1">
+                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                60 min
+            </span>
         </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="p-8 bg-white flex gap-4 items-start">
-        <span class="text-2xl select-none">🪒</span>
+    <div class="p-8 bg-white flex gap-4 items-start">
+        <img src="design-barba.svg" alt="ícone barba" class="w-16 h-16 object-contain" />
         <div>
-          <h3 class="font-bold text-xl">Design de Barba</h3>
-          <p class="text-gray-600 text-sm mt-1 text-[17px]">Design de barba personalizado para o cliente com técnica precisa.</p>
-          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+        <h3 class="font-bold text-xl">Design de Barba</h3>
+        <p class="text-gray-600 text-sm mt-1 text-[17px]">Design de barba personalizado para o cliente com técnica precisa.</p>
+        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
             <span>R$ 60</span>
-            <span class="font-bold text-black">🕒 30 min</span>
-          </div>
+            <span class="font-bold text-black flex items-center gap-1">
+                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                30 min
+            </span>
         </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="p-8 bg-white flex gap-4 items-start">
-        <span class="text-2xl select-none">🧴</span>
+    <div class="p-8 bg-white flex gap-4 items-start">
+        <img src="pacote-completo.svg" alt="ícone pacote-completo" class="w-16 h-16 object-contain" />
         <div>
-          <h3 class="font-bold text-xl">Pacote completo</h3>
-          <p class="text-gray-600 text-sm mt-1 text-[17px]">Combinação entre todos os pacotes sendo Cabelo + Barba + Sobrancelha.</p>
-          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+        <h3 class="font-bold text-xl">Pacote completo</h3>
+        <p class="text-gray-600 text-sm mt-1 text-[17px]">Combinação entre todos os pacotes sendo Cabelo + Barba + Sobrancelha.</p>
+        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
             <span>R$ 160</span>
-            <span class="font-bold text-black">🕒 90 min</span>
-          </div>
+            <span class="font-bold text-black flex items-center gap-1">
+                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                90 min
+            </span>
         </div>
-      </div>
+        </div>
+    </div>
 
     </div>
     
-  </body>
+</body>
 </html>
