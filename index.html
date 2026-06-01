@@ -6,6 +6,11 @@
     <title>WEBarber</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <script src="main.js" defer></script>
+    <style>
+        *{
+            font-family: "Inter", sans-serif !important;
+        }
+    </style>
   </head>
   <body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
     <div id="header" class="w-full">
@@ -54,14 +59,14 @@
         class="flex flex-row flex-wrap justify-center items-center gap-12 w-full"
       >
         <div class="flex flex-col items-start max-w-[500px]">
-          <h1 class="text-[50px] font-black text-left text-6xl leading-tight">
-            O corte <br />
-            mais preciso <br />
-            que você precisa!
+          <h1 class="text-[45px] font-black text-left text-6xl leading-tight">
+            O corte <br>
+            mais preciso <br>
+            que você precisa.
           </h1>
-          <p class="text-[1.1rem] text-left mt-6">
-            Agende um horário com um de nossos profissionais <br />
-            para alavancar seu visual com nossos pacotes.
+          <p class="text-[20px] text-left mt-6">
+            Agende seu horário com um de nossos professionals
+            para alavancar seu visual com um de nossos pacotes.
           </p>
           <div class="flex flex-row gap-4 mt-5 -translate-x-4">
             <a
@@ -80,7 +85,7 @@
         <img
           src="Gemini_Generated_Image_ieyk0uieyk0uieyk.png"
           alt="Cabelo"
-          class="w-60 h-71 object-cover border-[2px] border-[#140707] rounded-[20px]"
+          class="w-60 h-71 object-cover border-[2px] border-[#140707] rounded-[20px] -translate-x-2"
         />
       </div>
 
@@ -88,29 +93,84 @@
         <img
           src="Gemini_Generated_Image_8ljl2g8ljl2g8ljl.png"
           alt="Barbearia"
-          class="w-[250px] h-[290px] object-cover rounded-[20px] border-[2px] border-[#140707] translate-x-100"
+          class="w-[250px] h-[290px] object-cover rounded-[20px] border-[2px] border-[#140707]"
+          style="transform: translate(330px, -60px);"
         />
       </div>
 
       <div
-        class="text-[1.1rem] max-w-[700px] text-start w-full -translate-70 -translate-x-40"
+        class="text-[1.1rem] max-w-[700px] text-start w-full -translate-80 -translate-x-45" style="transform: translate(5px, -40px)"
       >
-        <div class="text-[50px] font-bold text-center mb-4">
+        <div class="text-[45px] font-extrabold text-center mb-4 font-black" style="transform: translate(5px, 0px)">
           <h2>Quem somos nós?</h2>
         </div>
-        <p> <div class = "translate-x-35">
-Fundada em 2010, a WEBarber é uma barbearia extremamente respeitada
-          <br />
-          e várias vezes premiada pelo BarberAwards, com destaque pra 2015
-          <br />
-          onde conseguimos o prêmio mais importante do país, o BarberKings.
+        <p> <div class = "text-[20px]" style="transform: translate(134px, -7px);">
+        Somos uma barbearia encontrada no bairro Martins <br>
+        desde 2006. Trabalhamos com cortes modernos e <br>
+        clássicos.
         </p>
         </div>
       </div>
     </div>
-
-    <div class="text-[45px] font-bold text-center mt-12 mb-20 w-full">
-      <a href="#bundlestitle" class="no-underline text-black">Our Bundles</a>
+    
+    <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full" style="transform: translate(-30px, -360px);">
+      <a href="#bundlestitle" class="no-underline text-black">Nossos pacotes</a>
     </div>
+
+    <div class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black" style="transform: translate(530px, -360px);">
+      
+      <div class="absolute inset-y-0 left-1/2 w-px bg-gray-300 pointer-events-none z-10"></div>
+      <div class="absolute inset-x-0 top-1/2 h-px bg-gray-300 pointer-events-none z-10"></div>
+
+      <div class="p-8 bg-white flex gap-4 items-start">
+        <span class="text-2xl select-none">✂️</span>
+        <div>
+          <h3 class="font-bold text-xl">Cabelo</h3>
+          <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado na medida, de acordo com o formato do seu rosto.</p>
+          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+            <span>R$ 60</span>
+            <span class="font-bold text-black">🕒 30 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 bg-white flex gap-4 items-start">
+        <span class="text-2xl select-none">💈</span>
+        <div>
+          <h3 class="font-bold text-xl">Corte + Sobrancelha</h3>
+          <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado e preciso, combinado com um design de sobrancelhas.</p>
+          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+            <span>R$ 110</span>
+            <span class="font-bold text-black">🕒 60 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 bg-white flex gap-4 items-start">
+        <span class="text-2xl select-none">🪒</span>
+        <div>
+          <h3 class="font-bold text-xl">Design de Barba</h3>
+          <p class="text-gray-600 text-sm mt-1 text-[17px]">Design de barba personalizado para o cliente com técnica precisa.</p>
+          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+            <span>R$ 60</span>
+            <span class="font-bold text-black">🕒 30 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 bg-white flex gap-4 items-start">
+        <span class="text-2xl select-none">🧴</span>
+        <div>
+          <h3 class="font-bold text-xl">Pacote completo</h3>
+          <p class="text-gray-600 text-sm mt-1 text-[17px]">Combinação entre todos os pacotes sendo Cabelo + Barba + Sobrancelha.</p>
+          <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+            <span>R$ 160</span>
+            <span class="font-bold text-black">🕒 90 min</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
   </body>
 </html>
