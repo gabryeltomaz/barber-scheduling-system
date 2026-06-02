@@ -21,6 +21,16 @@
             animation: float 4s ease-in-out infinite;
             animation-delay: 1.5s;
         }
+         @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 <body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
@@ -29,15 +39,15 @@
         class="relative flex justify-center items-center p-[1.4rem] max-w-[1375px] mx-auto w-full"
     >
         <div
-        class="absolute left-[1.4rem] text-black font-bold cursor-pointer text-[25px] max-w-[500px]"
+            class="absolute left-[1.4rem] text-black font-bold cursor-pointer text-[25px] max-w-[500px] items-center justify-center flex"
         >
         <h1>WeBarber</h1>
         </div>
-        <div class="flex items-center gap-16 translate-x-50">
+        <div class="w-full flex-row flex items-center gap-16 translate-x-50 justify-center">
         <a
             href="#home"
             class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Início</a
+            >Nossos serviços</a
         >
         <a
             href="#professionals"
@@ -101,7 +111,6 @@
             />
         </div>
     </div>
-
     <div class="w-full flex justify-center animate-float-2">
         <img
         src="barbearia.jpeg"
@@ -110,15 +119,14 @@
         style="transform: translate(330px, -60px);"
         />
     </div>
-
     <div
         class="text-[1.1rem] max-w-[700px] text-start w-full -translate-80 -translate-x-45" style="transform: translate(5px, -40px)"
     >
         <div class="text-[45px] font-extrabold text-start mb-4 font-black" style="transform: translate(110px, 0px)">
         <h2>Barbearia <br>
         especializada em <br>
-    cuidado pessoal <br>
-há 18 anos.</h2>
+        cuidado pessoal <br>
+        há 18 anos.</h2>
         </div>
         <p> <div class = "text-[20px]" style="transform: translate(125px, -7px);">
         Somos uma barbearia encontrada no bairro Martins <br>
@@ -128,16 +136,12 @@ há 18 anos.</h2>
         </div>
     </div>
     </div>
-    
-    <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full" style="transform: translate(-30px, -360px);">
+    <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center" style="transform: translate(-10px, -360px);">
     <a href="#bundlestitle" class="no-underline text-black">Nossos pacotes</a>
     </div>
-
-    <div class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black" style="transform: translate(510px, -360px);">
-    
-    <div class="absolute inset-y-0 left-1/2 w-px bg-gray-300 pointer-events-none z-10"></div>
-    <div class="absolute inset-x-0 top-1/2 h-px bg-gray-300 pointer-events-none z-10"></div>
-
+    <div class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black w-full flex flex-col items-center justify-center" style="transform: translate(530px, -360px);">
+    <div class="absolute inset-y-0 left-1/2 w-px bg-black pointer-events-none z-10"></div>
+    <div class="absolute inset-x-0 top-1/2 h-px bg-black pointer-events-none z-10" style="transform: translate(0px, -25px);"></div>
     <div class="p-8 bg-white flex gap-4 items-start">
         <img src="homem-cabelo.svg" alt="Ícone Cabelo" class="w-16 h-16 object-contain" />
         <div>
@@ -152,7 +156,6 @@ há 18 anos.</h2>
         </div>
         </div>
     </div>
-
     <div class="p-8 bg-white flex gap-4 items-start">
         <img src="corte-sobrancelha.svg" alt="ícone corte-sobrancelha" class="w-16 h-16 object-contain" />
         <div>
@@ -167,7 +170,6 @@ há 18 anos.</h2>
         </div>
         </div>
     </div>
-
     <div class="p-8 bg-white flex items-start">
         <img src="design-barba.svg" alt="ícone barba" class="w-16 h-16 object-contain" />
         <div>
@@ -182,7 +184,6 @@ há 18 anos.</h2>
         </div>
         </div>
     </div>
-
     <div class="p-8 bg-white flex gap-4 items-start">
         <img src="pacote-completo.svg" alt="ícone pacote-completo" class="w-16 h-16 object-contain" />
         <div>
@@ -197,16 +198,55 @@ há 18 anos.</h2>
         </div>
         </div>
     </div>
-    <div class="flex flex-row gap-4 mt-5" style="transform: translate(283px, 100px);">
+    <div class="w-full flex flex-row gap-4 mt-5 items-center justify-center" style="transform: translate(193px, 100px);">
             <a
             href="#appointment"
             class="bg-black font-bold inline-flex items-center justify-center text-white px-3 py-2 transition-colors cursor-pointer shadow-md"
-            >Conferir disponibilidade</a
-            >
-
+            >Conferir disponibilidade</a>
         </div>
-
     </div>
-    
+    <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center" style="transform: translate(-10px, -200px);">
+    <a href="#bundlestitle" class="no-underline text-black">Nossa equipe</a>
+    </div>
+    <div class="w-full overflow-hidden py-12 bg-[#f9f9f9]" style="transform: translate(0px, -220px);">
+    <div class="flex w-max animate-marquee gap-8 cursor-pointer pt-14 pb-4">
+        <div class="flex gap-8 items-center">
+            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
+                <img src="barbeiro-carrossel.jpg" alt="Junior" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
+                <h3 class="font-bold text-lg text-black mb-4">Junior</h3>
+                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Junior e sou bom nos cortes</p>
+            </div>
+            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
+                <img src="barbeiro-carrossel2.jpg" alt="Coquin" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
+                <h3 class="font-bold text-lg text-black mb-4">Coquin</h3>
+                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é joão henrique conhecido como coquin, sou especialista em visagismo e corto cabelo há 12 anos</p>
+            </div>
+            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
+                <img src="homem-solo.png" alt="Renan" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
+                <h3 class="font-bold text-lg text-black mb-4">Renan</h3>
+                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Renan especialista em design de sobrancelha e cortes modernos.</p>
+            </div>
+        </div>
+        <div class="flex gap-8 items-center" aria-hidden="true">
+            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
+                <img src="barbeiro-carrossel.jpg" alt="Junior" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
+                <h3 class="font-bold text-lg text-black mb-4">Junior</h3>
+                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Junior conhecido como especialista em Beard e corte de cabelo há 10 anos</p>
+            </div>
+            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
+                <img src="barbeiro-carrossel2.jpg" alt="Coquin" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
+                <h3 class="font-bold text-lg text-black mb-4">Coquin</h3>
+                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é joão henrique conhecido como coquin, sou especialista em visagismo e corto cabelo há 12 anos</p>
+            </div>
+            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
+                <img src="homem-solo.png" alt="Renan" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
+                <h3 class="font-bold text-lg text-black mb-4">Renan</h3>
+                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Renan especialista em design de sobrancelha e cortes modernos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-black flex grid-rows-2 text-white py-6 max-w-[2000px] h-52 w-500 mx-auto px-6" id="contatos-footer">
+</div>
 </body>
 </html>
