@@ -1,252 +1,437 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBarber</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <script src="main.js" defer></script>
     <style>
-        *{
-            font-family: "Inter", sans-serif !important;
+      * {
+        font-family: "Inter", sans-serif !important;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        50% {
+          transform: translateY(-10px);
         }
-        .animate-float-1 {
-            animation: float 4s ease-in-out infinite;
+      }
+      .animate-float-1 {
+        animation: float 4s ease-in-out infinite;
+      }
+      .animate-float-2 {
+        animation: float 4s ease-in-out infinite;
+        animation-delay: 1.5s;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
         }
-        .animate-float-2 {
-            animation: float 4s ease-in-out infinite;
-            animation-delay: 1.5s;
+        100% {
+          transform: translateX(-50%);
         }
-         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-            animation: marquee 25s linear infinite;
-        }
-        .animate-marquee:hover {
-            animation-play-state: paused;
-        }
+      }
+      .animate-marquee {
+        animation: marquee 25s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
     </style>
-</head>
-<body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
-    <div id="header" class="w-full">
-    <div
-        class="relative flex justify-center items-center p-[1.4rem] max-w-[1375px] mx-auto w-full"
-    >
+  </head>
+  <body class="bg-white m-0 p-0 box-border w-full overflow-x-hidden">
+    <div class="w-full overflow-hidden flex flex-col">
+      <div id="header" class="w-full">
         <div
+          class="relative flex justify-center items-center p-[1.4rem] max-w-[1375px] mx-auto w-full"
+        >
+          <div
             class="absolute left-[1.4rem] text-black font-bold cursor-pointer text-[25px] max-w-[500px] items-center justify-center flex"
-        >
-        <h1>WeBarber</h1>
-        </div>
-        <div class="w-full flex-row flex items-center gap-16 translate-x-50 justify-center">
-        <a
-            href="#home"
-            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Nossos serviços</a
-        >
-        <a
-            href="#professionals"
-            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Profissionais</a
-        >
-        <a
-            href="#contacts"
-            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Contatos</a
-        >
-        <a
-            href="#about-us"
-            class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
-            >Sobre nós</a
-        >
-        <a
-            href="#login"
-            class="bg-black font-bold border-2 inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer shadow-md"
-            >Login</a
-        >
-        </div>
-    </div>
-    </div>
-    <div
-    id="home"
-    class="max-w-[1750px] mx-auto p-[60px_20px] flex flex-col items-center justify-center w-full gap-16 translate-x-7"
-    >
-    <div
-        class="flex flex-row flex-wrap justify-center items-center gap-12 w-full"
-    >
-        <div class="flex flex-col items-start max-w-[500px]">
-        <h1 class="text-[45px] font-black text-left text-6xl leading-tight">
-            O corte <br>
-            mais preciso <br>
-            que você precisa.
-        </h1>
-        <p class="text-[20px] text-left mt-6">
-            Agende seu horário com um de nossos professionals
-            para alavancar seu visual com um de nossos pacotes.
-        </p>
-        <div class="flex flex-row gap-4 mt-5 -translate-x-4">
+            style="transform: translate(70px, -5px)"
+          >
+            <h1>WeBarber</h1>
+          </div>
+          <div
+            class="w-full flex-row flex items-center gap-16 translate-x-60 justify-center"
+          >
             <a
-            href="#appointment"
-            class="bg-black font-bold inline-flex items-center justify-center text-white px-3 py-2 transition-colors cursor-pointer shadow-md"
-            >Agendar um horário</a
+              href="#home"
+              class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+              >Nossos serviços</a
             >
             <a
-            href="#bundles"
-            class="bg-white font-bold inline-flex items-center justify-center text-black px-3 py-2 transition-colors cursor-pointer border border-gray-400 shadow-md"
-            >Ver nossos pacotes</a
+              href="#professionals"
+              class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+              >Profissionais</a
             >
+            <a
+              href="#contacts"
+              class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+              >Contatos</a
+            >
+            <a
+              href="#about-us"
+              class="text-[#140707] text-[1.1rem] font-extrabold transition-all duration-300 hover:bg-white hover:border-[3px] hover:border-[#140707] hover:p-[0.7rem]"
+              >Sobre nós</a
+            >
+            <a
+              href="#login"
+              class="bg-black font-bold border-2 inline-flex items-center justify-center text-white px-3 py-2 rounded-lg transition-colors cursor-pointer shadow-md"
+              >Login</a
+            >
+          </div>
         </div>
-        </div>
-
-        <div class="animate-float-1">
+      </div>
+      <div
+        id="home"
+        class="max-w-[1750px] mx-auto p-[60px_20px] flex flex-col items-center justify-center w-full gap-16 translate-x-7"
+      >
+        <div
+          class="flex flex-row flex-wrap justify-center items-center gap-12 w-full"
+        >
+          <div class="flex flex-col items-start max-w-[500px]">
+            <h1 class="text-[45px] font-black text-left text-6xl leading-tight">
+              O corte <br />
+              mais preciso <br />
+              que você precisa.
+            </h1>
+            <p class="text-[20px] text-left mt-6">
+              Agende seu horário com um de nossos professionals para alavancar
+              seu visual com um de nossos pacotes.
+            </p>
+            <div class="flex flex-row gap-4 mt-5">
+              <a
+                href="#appointment"
+                class="bg-black font-bold inline-flex items-center justify-center text-white px-3 py-2 transition-colors cursor-pointer shadow-md"
+                >Agendar um horário</a
+              >
+              <a
+                href="#bundles"
+                class="bg-white font-bold inline-flex items-center justify-center text-black px-3 py-2 transition-colors cursor-pointer border border-gray-400 shadow-md"
+                >Ver nossos pacotes</a
+              >
+            </div>
+          </div>
+          <div class="animate-float-1">
             <img
-            src="cabelo.jpg"
-            alt="Cabelo"
-            class="w-60 h-71 object-cover rounded-[20px] -translate-x-2 shadow-2xl"
+              src="cabelo.jpg"
+              alt="Cabelo"
+              class="w-60 h-71 object-cover rounded-[20px] -translate-x-2 shadow-2xl"
             />
+          </div>
         </div>
-    </div>
-    <div class="w-full flex justify-center animate-float-2">
-        <img
-        src="barbearia.jpeg"
-        alt="Barbearia"
-        class="w-[250px] h-[290px] object-cover rounded-[20px] shadow-2xl"
-        style="transform: translate(330px, -60px);"
-        />
-    </div>
-    <div
-        class="text-[1.1rem] max-w-[700px] text-start w-full -translate-80 -translate-x-45" style="transform: translate(5px, -40px)"
-    >
-        <div class="text-[45px] font-extrabold text-start mb-4 font-black" style="transform: translate(110px, 0px)">
-        <h2>Barbearia <br>
-        especializada em <br>
-        cuidado pessoal <br>
-        há 18 anos.</h2>
+        <div class="w-full flex justify-center animate-float-2">
+          <img
+            src="barbearia.jpeg"
+            alt="Barbearia"
+            class="w-[250px] h-[290px] object-cover rounded-[20px] shadow-2xl"
+            style="transform: translate(350px, -10px)"
+          />
         </div>
-        <p> <div class = "text-[20px]" style="transform: translate(125px, -7px);">
-        Somos uma barbearia encontrada no bairro Martins <br>
-        desde 2006. Trabalhamos com cortes modernos e <br>
-        clássicos.
-        </p>
+        <div
+          class="text-[1.1rem] max-w-[700px] text-start w-full -translate-80 -translate-x-45"
+          style="transform: translate(5px, -40px)"
+        >
+          <div
+            class="text-[45px] font-extrabold text-start mb-4 font-black justify-center items-center"
+            style="transform: translate(130px, 0px)"
+          >
+            <h2>
+              Barbearia <br />
+              especializada em <br />
+              cuidado pessoal <br />
+              há 18 anos.
+            </h2>
+          </div>
+          <div class="text-[20px]" style="transform: translate(130px, 0px)">
+            Somos uma barbearia encontrada no bairro Martins <br />
+            desde 2006. Trabalhamos com cortes modernos e <br />
+            clássicos.
+          </div>
         </div>
-    </div>
-    </div>
-    <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center" style="transform: translate(-10px, -360px);">
-    <a href="#bundlestitle" class="no-underline text-black">Nossos pacotes</a>
-    </div>
-    <div class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black w-full flex flex-col items-center justify-center" style="transform: translate(530px, -360px);">
-    <div class="absolute inset-y-0 left-1/2 w-px bg-black pointer-events-none z-10"></div>
-    <div class="absolute inset-x-0 top-1/2 h-px bg-black pointer-events-none z-10" style="transform: translate(0px, -25px);"></div>
-    <div class="p-8 bg-white flex gap-4 items-start">
-        <img src="homem-cabelo.svg" alt="Ícone Cabelo" class="w-16 h-16 object-contain" />
-        <div>
-        <h3 class="font-bold text-xl">Cabelo</h3>
-        <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado na medida, de acordo com o formato do seu rosto.</p>
-        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
-            <span>R$ 60</span>
-            <span class="font-bold text-black flex items-center gap-1">
-                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      </div>
+      <div
+        class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center"
+        style="transform: translate(-10px, -360px)"
+      >
+        <a href="#bundlestitle" class="no-underline text-black"
+          >Nossos pacotes</a
+        >
+      </div>
+      <div
+        class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black w-full items-center justify-center"
+        style="transform: translate(550px, -360px)"
+      >
+        <div
+          class="absolute inset-y-0 left-1/2 w-px bg-black pointer-events-none z-10"
+        ></div>
+        <div
+          class="absolute inset-x-0 top-1/2 h-px bg-black pointer-events-none z-10"
+          style="transform: translate(0px, -25px)"
+        ></div>
+        <div class="p-8 bg-white flex gap-4 items-start">
+          <img
+            src="homem-cabelo.svg"
+            alt="Ícone Cabelo"
+            class="w-16 h-16 object-contain"
+          />
+          <div>
+            <h3 class="font-bold text-xl">Cabelo</h3>
+            <p class="text-gray-600 text-sm mt-1 text-[17px]">
+              Corte personalizado na medida, de acordo com o formato do seu
+              rosto.
+            </p>
+            <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+              <span>R$ 60</span>
+              <span class="font-bold text-black flex items-center gap-1">
+                <svg
+                  class="w-4 h-4 text-black"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
                 30 min
-            </span>
+              </span>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="p-8 bg-white flex gap-4 items-start">
-        <img src="corte-sobrancelha.svg" alt="ícone corte-sobrancelha" class="w-16 h-16 object-contain" />
-        <div>
-        <h3 class="font-bold text-xl">Corte + Sobrancelha</h3>
-        <p class="text-gray-600 text-sm mt-1 text-[17px]">Corte personalizado, combinado com um design de sobrancelhas.</p>
-        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
-            <span>R$ 110</span>
-            <span class="font-bold text-black flex items-center gap-1">
-                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <div class="p-8 bg-white flex gap-4 items-start">
+          <img
+            src="corte-sobrancelha.svg"
+            alt="ícone corte-sobrancelha"
+            class="w-16 h-16 object-contain"
+          />
+          <div>
+            <h3 class="font-bold text-xl">Corte + Sobrancelha</h3>
+            <p class="text-gray-600 text-sm mt-1 text-[17px]">
+              Corte personalizado, combinado com um design de sobrancelhas.
+            </p>
+            <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+              <span>R$ 110</span>
+              <span class="font-bold text-black flex items-center gap-1">
+                <svg
+                  class="w-4 h-4 text-black"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
                 60 min
-            </span>
+              </span>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="p-8 bg-white flex items-start">
-        <img src="design-barba.svg" alt="ícone barba" class="w-16 h-16 object-contain" />
-        <div>
-        <h3 class="font-bold text-xl">Design de Barba</h3>
-        <p class="text-gray-600 text-sm mt-1 text-[17px]">Design de barba personalizado para o cliente com técnica precisa.</p>
-        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
-            <span>R$ 60</span>
-            <span class="font-bold text-black flex items-center gap-1">
-                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <div class="p-8 bg-white flex items-start">
+          <img
+            src="design-barba.svg"
+            alt="ícone barba"
+            class="w-16 h-16 object-contain"
+          />
+          <div>
+            <h3 class="font-bold text-xl">Design de Barba</h3>
+            <p class="text-gray-600 text-sm mt-1 text-[17px]">
+              Design de barba personalizado para o cliente com technique
+              precisa.
+            </p>
+            <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+              <span>R$ 60</span>
+              <span class="font-bold text-black flex items-center gap-1">
+                <svg
+                  class="w-4 h-4 text-black"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
                 30 min
-            </span>
+              </span>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="p-8 bg-white flex gap-4 items-start">
-        <img src="pacote-completo.svg" alt="ícone pacote-completo" class="w-16 h-16 object-contain" />
-        <div>
-        <h3 class="font-bold text-xl">Pacote completo</h3>
-        <p class="text-gray-600 text-sm mt-1 text-[17px]">Combinação entre todos os pacotes sendo Cabelo + Barba + Sobrancelha.</p>
-        <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
-            <span>R$ 160</span>
-            <span class="font-bold text-black flex items-center gap-1">
-                <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <div class="p-8 bg-white flex gap-4 items-start">
+          <img
+            src="pacote-completo.svg"
+            alt="ícone pacote-completo"
+            class="w-16 h-16 object-contain"
+          />
+          <div>
+            <h3 class="font-bold text-xl">Pacote completo</h3>
+            <p class="text-gray-600 text-sm mt-1 text-[17px]">
+              Combinação entre todos os pacotes sendo Cabelo + Barba +
+              Sobrancelha.
+            </p>
+            <div class="flex gap-6 mt-3 font-bold text-sm -translate-x-3.5">
+              <span>R$ 160</span>
+              <span class="font-bold text-black flex items-center gap-1">
+                <svg
+                  class="w-4 h-4 text-black"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
                 90 min
-            </span>
+              </span>
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="w-full flex flex-row gap-4 mt-5 items-center justify-center" style="transform: translate(193px, 100px);">
-            <a
+        <div
+          class="w-full flex flex-row gap-4 mt-5 items-center justify-center"
+          style="transform: translate(193px, 100px)"
+        >
+          <a
             href="#appointment"
-            class="bg-black font-bold inline-flex items-center justify-center text-white px-3 py-2 transition-colors cursor-pointer shadow-md"
-            >Conferir disponibilidade</a>
+            class="bg-black font-bold inline-flex flex items-center justify-center text-white px-3 py-2 transition-colors cursor-pointer shadow-md"
+            >Conferir disponibilidade</a
+          >
         </div>
-    </div>
-    <div class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center" style="transform: translate(-10px, -200px);">
-    <a href="#bundlestitle" class="no-underline text-black">Nossa equipe</a>
-    </div>
-    <div class="w-full overflow-hidden py-12 bg-[#f9f9f9]" style="transform: translate(0px, -220px);">
-    <div class="flex w-max animate-marquee gap-8 cursor-pointer pt-14 pb-4">
-        <div class="flex gap-8 items-center">
-            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
-                <img src="barbeiro-carrossel.jpg" alt="Junior" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
-                <h3 class="font-bold text-lg text-black mb-4">Junior</h3>
-                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Junior e sou bom nos cortes</p>
+      </div>
+      <div
+        class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center"
+        style="transform: translate(-10px, -200px)"
+      >
+        <a href="#bundlestitle" class="no-underline text-black">Nossa equipe</a>
+      </div>
+      <div
+        class="w-full overflow-hidden py-12 bg-[#f9f9f9]"
+        style="transform: translate(0px, -220px)"
+      >
+        <div class="flex w-max animate-marquee gap-8 cursor-pointer pt-14 pb-4">
+          <div class="flex gap-8 items-center">
+            <div
+              class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2"
+            >
+              <img
+                src="barbeiro-carrossel.jpg"
+                alt="Junior"
+                class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+              />
+              <h3 class="font-bold text-lg text-black mb-4">Junior</h3>
+              <p class="text-black text-sm leading-relaxed max-w-[280px]">
+                Olá meu nome é Junior e sou bom nos cortes
+              </p>
             </div>
-            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
-                <img src="barbeiro-carrossel2.jpg" alt="Coquin" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
-                <h3 class="font-bold text-lg text-black mb-4">Coquin</h3>
-                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é joão henrique conhecido como coquin, sou especialista em visagismo e corto cabelo há 12 anos</p>
+            <div
+              class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2"
+            >
+              <img
+                src="barbeiro-carrossel2.jpg"
+                alt="Coquin"
+                class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+              />
+              <h3 class="font-bold text-lg text-black mb-4">Coquin</h3>
+              <p class="text-black text-sm leading-relaxed max-w-[280px]">
+                Olá meu nome é joão henrique conhecido como coquin, sou
+                especialista em visagismo e corto cabelo há 12 anos
+              </p>
             </div>
-            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
-                <img src="homem-solo.png" alt="Renan" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
-                <h3 class="font-bold text-lg text-black mb-4">Renan</h3>
-                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Renan especialista em design de sobrancelha e cortes modernos.</p>
+            <div
+              class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2"
+            >
+              <img
+                src="homem-solo.png"
+                alt="Renan"
+                class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+              />
+              <h3 class="font-bold text-lg text-black mb-4">Renan</h3>
+              <p class="text-black text-sm leading-relaxed max-w-[280px]">
+                Olá meu nome é Renan especialista em design de sobrancelha e
+                cortes modernos.
+              </p>
             </div>
+          </div>
+          <div class="flex gap-8 items-center" aria-hidden="true">
+            <div
+              class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2"
+            >
+              <img
+                src="barbeiro-carrossel.jpg"
+                alt="Junior"
+                class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+              />
+              <h3 class="font-bold text-lg text-black mb-4">Junior</h3>
+              <p class="text-black text-sm leading-relaxed max-w-[280px]">
+                Olá meu nome é Junior conhecido como especialista em Beard e
+                corte de cabelo há 10 anos
+              </p>
+            </div>
+            <div
+              class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2"
+            >
+              <img
+                src="barbeiro-carrossel2.jpg"
+                alt="Coquin"
+                class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+              />
+              <h3 class="font-bold text-lg text-black mb-4">Coquin</h3>
+              <p class="text-black text-sm leading-relaxed max-w-[280px]">
+                Olá meu nome é joão henrique conhecido como coquin, sou
+                especialista em visagismo e corto cabelo há 12 anos
+              </p>
+            </div>
+            <div
+              class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2"
+            >
+              <img
+                src="homem-solo.png"
+                alt="Renan"
+                class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+              />
+              <h3 class="font-bold text-lg text-black mb-4">Renan</h3>
+              <p class="text-black text-sm leading-relaxed max-w-[280px]">
+                Olá meu nome é Renan especialista em design de sobrancelha e
+                cortes modernos.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="flex gap-8 items-center" aria-hidden="true">
-            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
-                <img src="barbeiro-carrossel.jpg" alt="Junior" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
-                <h3 class="font-bold text-lg text-black mb-4">Junior</h3>
-                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Junior conhecido como especialista em Beard e corte de cabelo há 10 anos</p>
-            </div>
-            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
-                <img src="barbeiro-carrossel2.jpg" alt="Coquin" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
-                <h3 class="font-bold text-lg text-black mb-4">Coquin</h3>
-                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é joão henrique conhecido como coquin, sou especialista em visagismo e corto cabelo há 12 anos</p>
-            </div>
-            <div class="relative w-[340px] p-6 pt-14 bg-white border border-gray-300 rounded-none text-center flex flex-col items-center justify-center mx-2">
-                <img src="homem-solo.png" alt="Renan" class="absolute -top-12 w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm" />
-                <h3 class="font-bold text-lg text-black mb-4">Renan</h3>
-                <p class="text-black text-sm leading-relaxed max-w-[280px]">Olá meu nome é Renan especialista em design de sobrancelha e cortes modernos.</p>
-            </div>
+      </div>
+      <div
+        class="bg-black flex grid-rows-2 text-white py-6 max-w-[2000px] h-52 w-500 mx-auto px-6"
+        id="contatos-footer"
+      >
+        <div class="text" style="transform: translate(20px, 0px)" id="contatos">
+          Contatos:
         </div>
+        <div
+          class="text"
+          style="transform: translate(-50px, 40px)"
+          id="contatos2"
+        >
+          (34) 9 9999-9999
+        </div>
+        <div
+          class="text"
+          style="transform: translate(-172px, 70px)"
+          id="contatos3"
+        >
+          (34) 9 9888-8888
+        </div>
+      </div>
     </div>
-</div>
-<div class="bg-black flex grid-rows-2 text-white py-6 max-w-[2000px] h-52 w-500 mx-auto px-6" id="contatos-footer">
-</div>
-</body>
+  </body>
 </html>
