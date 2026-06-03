@@ -27,7 +27,7 @@
         animation-delay: 1.5s;
       }
       @keyframes marquee {
-        0% {
+        0 {
           transform: translateX(0);
         }
         100% {
@@ -85,6 +85,7 @@
           </div>
         </div>
       </div>
+
       <div
         id="home"
         class="max-w-[1750px] mx-auto p-[60px_20px] flex flex-col items-center justify-center w-full gap-16 -translate-x-0"
@@ -148,22 +149,23 @@
           </div>
           <div class="text-[20px]" style="transform: translate(130px, 0px)">
             Somos uma barbearia encontrada no bairro Martins <br />
-            desde 2006. Trabalhamos com cortes modernos e <br />
+            desde 2006. Trabalhamos with cortes modernos e <br />
             clássicos.
           </div>
         </div>
       </div>
+
       <div
         class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center"
-        style="transform: translate(0px, -360px)"
+        style="margin-top: -360px"
       >
         <a href="#bundlestitle" class="no-underline text-black"
           >Nossos pacotes</a
         >
       </div>
+
       <div
         class="relative grid grid-cols-2 max-w-[800px] mx-auto text-black w-full items-center justify-center"
-        style="transform: translate(0px, -360px)"
       >
         <div
           class="absolute inset-y-0 left-1/2 w-px bg-black pointer-events-none z-10"
@@ -310,15 +312,17 @@
           >
         </div>
       </div>
+
       <div
         class="text-[45px] font-extrabold text-center mt-12 mb-20 w-full flex flex-col items-center justify-center"
-        style="transform: translate(0px, -200px)"
+        style="margin-top: 160px"
       >
         <a href="#bundlestitle" class="no-underline text-black">Nossa equipe</a>
       </div>
+
       <div
         class="w-full overflow-hidden py-12 bg-[#f9f9f9]"
-        style="transform: translate(0px, -220px)"
+        style="margin-top: -220px"
       >
         <div class="flex w-max animate-marquee gap-8 cursor-pointer pt-14 pb-4">
           <div class="flex gap-8 items-center">
@@ -410,55 +414,40 @@
           </div>
         </div>
       </div>
-      <div
-        class="bg-black flex grid-rows-2 text-white max-w-[2000px] py-6 h-70 w-500 mx-auto px-6"
-        id="contatos-footer"
-      >
-        <div class="text" style="transform: translate(20px, 0px)" id="contatos">
-          Contatos:
-        </div>
+
+      <div class="bg-black text-white w-full py-12 px-6">
         <div
-          class="text"
-          style="transform: translate(-50px, 40px)"
-          id="contatos2"
+          class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start"
         >
-          (34) 9 9999-9999
-        </div>
-        <div
-          class="text"
-          style="transform: translate(-173px, 70px)"
-          id="contatos3"
-        >
-          (34) 9 9888-8888
-        </div>
-        <div class="text" style="transform: translate(100px, 0px)">
-          Redes sociais:
-        </div>
-        <div class="text" style="transform: translate(-5px, 35px)">
-          @ronaldinhodocorte
-        </div>
-        <div class="text" style="transform: translate(-150px, 60px)">
-          @cortamuito
-        </div>
-        <div class="text" style="transform: translate(-241px, 85px)">
-          @cortadordecabelos
-        </div>
-        <div class="text" style="transform: translate(20px, 0px)">
-          Onde estamos:
-          <div
-            class="mapa w-full h-[450px] rounded-lg overflow-hidden border border-gray-100/10 shadow-lg"
-            style="transform: translate(150px, -20px)"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7548.906944203065!2d-48.292671072841365!3d-18.911311846265665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4444d88ee493d%3A0x397e0217e8ab39a8!2sMartins%2C%20Uberl%C3%A2ndia%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1780507981216!5m2!1spt-BR!2sbr"
-              width="290px"
-              height="230px"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+          <div class="flex flex-col gap-2">
+            <h3 class="text-lg font-bold">Contatos:</h3>
+            <div
+              class="flex flex-col gap-1 text-base text-gray-300 whitespace-nowrap"
             >
-            </iframe>
+              <span>(34) 9 9999-9999</span>
+              <span>(34) 9 9999-9999</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-lg font-bold">Redes sociais:</h3>
+            <div
+              class="flex flex-col gap-1 text-base text-gray-300 whitespace-nowrap"
+            >
+              <span>@ronaldinhodocorte</span>
+              <span>@cortamuito</span>
+              <span>@cortadordecabelos</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="text-lg font-bold">Onde estamos:</h3>
+            <div class="w-[280px] h-[160px] overflow-hidden rounded shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7548.906944203065!2d-48.292671072841365!3d-18.911311846265665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4444d88ee493d%3A0x397e0217e8ab39a8!2sMartins%2C%20Uberl%C3%A2ndia%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1780507981216!5m2!1spt-BR!2sbr"
+                class="w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
