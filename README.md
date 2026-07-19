@@ -114,12 +114,6 @@ Abra a página principal utilizando um servidor local, por exemplo:
 
 - Live Server (VS Code)
 
-ou
-
-```bash
-python -m http.server
-```
-
 ---
 
 ## 📚 Histórias de Usuário Implementadas
@@ -147,11 +141,3 @@ O sistema possui interfaces para:
 - Gerenciamento de barbeiros
 - Gerenciamento de serviços
 - Gerenciamento de agendamentos
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Gabryel** como projeto acadêmico para estudo de desenvolvimento web utilizando Spring Boot e JavaScript.
-
----
