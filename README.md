@@ -73,7 +73,7 @@ backend/
 ### 1. Clone o projeto
 
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+[git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/gabryeltomaz/barber-scheduling-system.git)
 ```
 
 ---
