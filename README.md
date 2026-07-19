@@ -49,25 +49,6 @@ Sistema web desenvolvido para gerenciamento de uma barbearia, permitindo que cli
 
 ---
 
-## 📁 Estrutura
-
-```text
-frontend/
-│
-├── html/
-├── css/
-├── js/
-│
-backend/
-│
-├── controller/
-├── model/
-├── repository/
-└── resources/
-```
-
----
-
 ## 🚀 Como executar
 
 ### 1. Clone o projeto
